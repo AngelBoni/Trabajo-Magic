@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivProducto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Imagen del producto"/>
+
+        <TextView
+            android:id="@+id/tvNombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnCalificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calificar"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnAgregarAlCarrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar al carrito"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
